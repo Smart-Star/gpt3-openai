@@ -1,0 +1,26 @@
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: { react: { version: '18.2' } },
+  plugins: ['react-refresh', 'prettier'],
+  rules: {
+    'react/jsx-no-target-blank': 'off',
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+    'react/react-in-jsx-scope': 0,
+    'no-console': 0,
+    'prettier/prettier': 0,
+    'no-unused-vars': 1,
+    'import/prefer-default-export': 0,
+    'react/self-closing-comp': 0,
+    'react/function-component-definition': 0,
+    'react/prop-types': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+  },
+};
